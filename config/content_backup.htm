@@ -15,7 +15,39 @@
 <p style="padding-left: 60px;">w17 (<span style="background-color: #ccffcc;">1b 採 Youtube 影片簡報</span>): 計算機程式課程學到了什麼？</p>
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
-<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p><h1>Group2_Code_w</h1>
+<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
+<h1>Topics</h1>
+<p><span>w1:</span></p>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>利用 portable_2026 可攜系統維護 Github Pages 網站內容</p>
+<p>透過 Token 取得維護權限</p>
+<p>y:\home_ipv6\.gitconfig 中設定</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_631505">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">[http </code><code class="js string">"https://github.com"</code><code class="js plain">]</code></div>
+<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">sslVerify = </code><code class="js keyword">false</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>表示當採 https 連線到 github.com 時，停用 SSL 憑證驗證，雖然方便，但若透過公眾網路上網，將會暴露在中間人攻擊(<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB">MITM</a>)的風險。</p>
+<p>或者</p>
+<p>git config --global http.sslCAInfo "y:\PortableGit\usr\ssl\certs\ca-bundle.crt"</p>
+<p>啟用 SSL 憑證驗證。</p>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>Take Home 問題: 近端維護 Github Pages 網站時，有哪兩種管理權限驗證方式?</p><h1>Group2_Code</h1>
 <p><a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/41423230zhang/18a8fe927a52bc66dfb5a8b42778b4be/raw/eddc652ded99c1ad0a21d7a5f821e92e63a9987a/">python</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html, timer
 
@@ -320,7 +352,8 @@ pd.DataFrame(present_list, columns=["學號", "姓名"]).to_csv("1b_present.csv"
 pd.DataFrame(absent_list, columns=["學號", "姓名"]).to_csv("1b_absent.csv", index=False, encoding="utf-8-sig")
 
 print("\n📁 已輸出兩份檔案：1b_present.csv（出席）與 1b_absent.csv（缺席）")</pre>
-<p></p><h1>Project</h1>
+<p></p>
+<h1>Project</h1>
 <p>既存技術:</p>
 <p style="padding-left: 30px;"><a href="https://github.com/scrum-1/respysive-slide">https://github.com/scrum-1/respysive-slide</a> (功能最完整，可以與許多 Python 模組結合)</p>
 <p style="padding-left: 30px;"><a href="https://github.com/tavallaie/pyreveal">https://github.com/tavallaie/pyreveal</a> </p>

@@ -15,7 +15,86 @@
 <p style="padding-left: 60px;">w17 (<span style="background-color: #ccffcc;">1b 採 Youtube 影片簡報</span>): 計算機程式課程學到了什麼？</p>
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
-<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p><h1>Group2_Code</h1>
+<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
+<h1>Topics</h1>
+<p><span>w1:</span></p>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>利用 portable_2026 可攜系統維護 Github Pages 網站內容</p>
+<p>透過 Token 取得維護權限</p>
+<p>y:\home_ipv6\.gitconfig 中設定</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_631505">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">[http </code><code class="js string">"https://github.com"</code><code class="js plain">]</code></div>
+<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">sslVerify = </code><code class="js keyword">false</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>表示當採 https 連線到 github.com 時，停用 SSL 憑證驗證，雖然方便，但若透過公眾網路上網，將會暴露在中間人攻擊(<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB">MITM</a>)的風險。</p>
+<p>或者</p>
+<p>git config --global http.sslCAInfo "y:\PortableGit\usr\ssl\certs\ca-bundle.crt"</p>
+<p>啟用 SSL 憑證驗證。</p>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>Take Home 問題: 近端維護 Github Pages 網站時，有哪兩種管理權限驗證方式?</p>
+<p>w2:</p>
+<p>開始透過 <a href="https://mde.tw/cp2025/content/Robot_ex.html">https://mde.tw/cp2025/content/Robot_ex.html</a> 學習 Python 程式語法。</p>
+<p>當了解如何<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/71ff1c69dd233e6a5a83dd60997950de/raw/7f33223c0c669eac2a2bbce5c60b610edfdd9c72/brython_robot_ex1.py">控制機器人直行</a>之後，若又對機器人加了一個左轉的功能 - turn_left()，機器人是否已經可以在平面場區中自由行動。</p>
+<p>假如又知道機器人在創始階段，是透過 World(10, 10) 方法，建立一個 10 x 10 的平面場區，那麼場景範圍應該可以自由控制大小。</p>
+<p>接下來，請結合上述資訊，修改<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/71ff1c69dd233e6a5a83dd60997950de/raw/7f33223c0c669eac2a2bbce5c60b610edfdd9c72/brython_robot_ex1.py">控制機器人直行</a>程式，讓機器人的足跡踏遍 10 x 10 場區的每一格。</p>
+<p>這樣，也能完成踏遍 20 x 20 場區的每一格嗎?</p>
+<p>Python 基本語法:<span> </span><a href="https://link.springer.com/chapter/10.1007/978-3-031-90522-3_1">Python essential</a> (只能在校網擷取)</p>
+<p>應用函式定義與 for 重複迴圈，可以導引機器人在 20x20 的場景中<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/d6d229925f852c97fc71abe1fa0620c4/raw/bb1b4c63ef692fd8c61f339dbd59c413e7405573/w2_1.py">走過</a>每一格。</p>
+<p>利用上列程式，再設定繞行所有網格的程式為 walk_all_grid() 函式，可以適用不同大小的網格場景<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/d6d229925f852c97fc71abe1fa0620c4/raw/e221415e8e698159a9cc947ab09f3c53b36bb33e/horizontal_walk_all_grid.py">行走</a>。</p>
+<p><span>程式練習</span>: 上面的機器人行走範例，採水平路線行走，請各分組學員設法修改為採垂直路線繞行所有網格的版本。</p>
+<p><span style="color: #000000; background-color: #ff9900;">問題:</span> 不知道您有沒有注意到，上面的網格尺寸都是整數，因此<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/d6d229925f852c97fc71abe1fa0620c4/raw/bb1b4c63ef692fd8c61f339dbd59c413e7405573/w2_1.py">走過</a>每一格，以及<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/d6d229925f852c97fc71abe1fa0620c4/raw/e221415e8e698159a9cc947ab09f3c53b36bb33e/horizontal_walk_all_grid.py">行走</a>的程式都不會造成問題，</p>
+<p>但若網格的尺寸不是整數而是奇數 (例如: 利用先前設計<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/d6d229925f852c97fc71abe1fa0620c4/raw/85f4d857f267ebca6a6f401c889a3a6ad8629096/walk_11x11.py">行走 11x11 網格</a>)，應該如何修改? 目標是無論 size 是整數或是奇數，無論是水平或垂直繞行，機器人都要能順利完成繞行經過每一格的任務。</p>
+<p>w3:<span> </span><a href="https://mde.tw/cp_demo/content/Python.html">Python 程式語法學習</a></p>
+<p>利用 <a href="https://github.com/scrum-1/respysive-slide">https://github.com/scrum-1/respysive-slide</a> 製作簡報，設法可以多人採分散式版次管理流程製作協同專案的線上簡報內容。</p>
+<p>讓簡報製作就像寫 Python 程式一樣，可以分散式協同，方便非同步內容管理與合併，可以直接在線上進行簡報。</p>
+<p>w4: 機電系統設計，其實是一連串的數學解題與程式設計。</p>
+<p>電腦輔助機械設計套件（Computer-Aided Mechanical Design Package），本質上是一種結合<strong data-end="1401" data-start="1378">數學建模、工程物理、計算模擬與資訊技術</strong>的工具，主要目的是幫助工程師在數位空間中完成設計、分析與製造準備工作。</p>
+<p>電腦輔助機械設計套件的本質是透過電腦建模與模擬技術，把機械工程師的設計概念數位化，並透過虛擬工具進行驗證與最佳化。</p>
+<p>這些結合數學幾何模型與計算機程式的工具，讓工程師能夠 1) 在虛擬空間中繪製零件與組件 2) 模擬材料與力學行為 3) 取得最佳化設計參數 4) 快速修改與試驗不同方案 5) 避免昂貴的實體原型開發與測試。</p>
+<p>設計案例:<span> </span><a href="https://mde.tw/cad_demo/content/Plotter.html">Plotter</a>，<a href="https://mde.tw/cad_demo/content/Openduck.html">Openduck</a></p>
+<p><a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d1f7266329c2e18800c236f8c639b1de0317a591/cp_w4_robot_animation.py">機器人行走模擬程式</a>，存為程式模組之後，利用向量運算<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/f354f7b128bcbb8c41aa059d2749d92d89ebb8bb/w4_vector_control_robot.py">控制機器人行進方向</a></p>
+<p>若直接在瀏覽器中執行<a href="https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/26e0aa0ac5ee0b5cfdceb559a4bd2bd5e4c382b8/w4_A_star_searching.py">較密集運算</a>時，瀏覽器回覆執行速度過慢時，該如何處理?</p>
+<p>w5-w12: 深入理解<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d1f7266329c2e18800c236f8c639b1de0317a591/cp_w4_robot_animation.py">機器人行走模擬程式</a>中的所有 Python 與 Brython 程式用法。</p>
+<p>Prompt:</p>
+<p>請針對 from browser import document, html, timer, bind 中導入的物件各舉 10 個案例詳細說明。</p>
+<p>請詳細說明以下程式各行的用法: (隨後將程式碼附上)</p>
+<p>說明如何將 Brython 程式直接放入網頁中執行。</p>
+<p>w7: <a href="https://mde.tw/cp2025/downloads/websocket_robot.7z">websocket_robot.7z</a> (納入由遠端鍵盤控制 robot)</p>
+<p>localhost websocket 應用:<span> </span><a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/159e3ccc2fe4c2027ed3a676273573bb/raw/b7bd9fb81c8faf3eb229ef4cda46200b7a5aab6e/brython_websocket1.py">brython 端</a>，<a href="https://gist.githubusercontent.com/mdecycu/159e3ccc2fe4c2027ed3a676273573bb/raw/b7bd9fb81c8faf3eb229ef4cda46200b7a5aab6e/websocket_server1.py">server 端</a></p>
+<p>IPv4 與 IPv6 websocket 應用: <a href="https://mde.tw/cp2025/downloads/brython_websocket_app.7z">brython_websocket_app.7z</a></p>
+<p>如何將 websocket 應用到 <a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d1f7266329c2e18800c236f8c639b1de0317a591/cp_w4_robot_animation.py">機器人行走模擬程式</a>?</p>
+<p>w7 1b 題目:</p>
+<p>請導引 robot 走到 10x10 格點，以 (5, 5) 為中心畫一個 2x2 的正方形線條</p>
+<p>可以直接將 robot 的起始位置訂為畫線起點，再逐一畫出 4 條線</p>
+<p>若從 (1,1) 開始<span>走到</span>畫線起點，也可以逐一畫出所需的 4 條線 (<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/488e94c6a6f0c3f63dbae5e1d0e61a7ab8a812d7/w7_1b_ex1.py">範例</a>)</p>
+<p>若能新增一個 move2() 是不會留下紅色軌跡的函式，該如何編寫?</p>
+<p>若已經知道可以透過 git checkout c0d70cd 將倉儲內容切回第四週的版本，請列出新舊<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d1f7266329c2e18800c236f8c639b1de0317a591/cp_w4_robot_animation.py">機器人行走模擬程式</a>的修改細節。</p>
+<p>新增 move3(x1, y1, x2, y2) 可以從 (x1, y1) 走到 (x2, y2), 留下斜線路徑的<span> </span><a href="https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d529e57369b9b6fd6668fd3c42b6dcea5b4a652c/cp_w4_robot_animation.py">robot_lib.py</a>。</p>
+<p>w8:</p>
+<p>請各分組採協同製作的流程完成下列任務:</p>
+<p>設法利用<a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/fa7d2a68d1569596f62e5b7739a83119/raw/d1f7266329c2e18800c236f8c639b1de0317a591/cp_w4_robot_animation.py">機器人行走模擬程式</a>，列出與 Python<span> </span><a href="https://mde.tw/cp2025/downloads/python_keywords.txt">所有關鍵字</a>有關的程式應用範例。</p>
+<p>設法利用機器人的行走練習與<span> </span><a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Reference/Elements/canvas">Html5 Canvas</a><span> </span>有關的各種繪圖程式練習。</p>
+<p>Brython 程式位於瀏覽器前端，若要將表單上的資料儲存至後端，就必須與 Python 程式.</p>
+<p>兩端如何溝通: 使用傳統的 ajax 或 websocket? Python 數值運算或檔案轉換後的<span>資料如何存檔</span>?</p>
+<p>如何利用 Python 讀進 <a href="https://mde.tw/cp2025/downloads/robot_lib.txt">robot_lib.txt</a> 檔案，並用 print 將內容列出?</p>
+<p>Python 資料結構: list、tuple、dictionary、set 如何應用?</p>
+<p>Python 與資料庫 (Database): SQLite、PostgreSQL、MySQL、MS SQL</p><h1>Group2_Code</h1>
 <p><a href="https://mde.tw/cp2025/content/Brython.html?src=https://gist.githubusercontent.com/41423230zhang/18a8fe927a52bc66dfb5a8b42778b4be/raw/eddc652ded99c1ad0a21d7a5f821e92e63a9987a/">python</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html, timer
 
@@ -320,7 +399,8 @@ pd.DataFrame(present_list, columns=["學號", "姓名"]).to_csv("1b_present.csv"
 pd.DataFrame(absent_list, columns=["學號", "姓名"]).to_csv("1b_absent.csv", index=False, encoding="utf-8-sig")
 
 print("\n📁 已輸出兩份檔案：1b_present.csv（出席）與 1b_absent.csv（缺席）")</pre>
-<p></p><h1>Project</h1>
+<p></p>
+<h1>Project</h1>
 <p>既存技術:</p>
 <p style="padding-left: 30px;"><a href="https://github.com/scrum-1/respysive-slide">https://github.com/scrum-1/respysive-slide</a> (功能最完整，可以與許多 Python 模組結合)</p>
 <p style="padding-left: 30px;"><a href="https://github.com/tavallaie/pyreveal">https://github.com/tavallaie/pyreveal</a> </p>
