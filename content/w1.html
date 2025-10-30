@@ -2,6 +2,7 @@
         <head>
         <title>cp_demo</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -95,6 +96,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -140,4 +142,85 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>SMap</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Topics.html'>Topics</a><ul><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w3.html'>w3</a><li><a href='w5-w12.html'>w5-w12</a><li><a href='w7.html'>w7</a><li><a href='w7 1b 題目.html'>w7 1b 題目</a><li><a href='w8.html'>w8</a></li></ul><li><a href='Group2_Code.html'>Group2_Code</a><li><a href='Project.html'>Project</a><li><a href='Python.html'>Python</a><li><a href='Brython.html'>Brython</a><ul><li><a href='Pyodide3.html'>Pyodide3</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">Topics << <a href='Topics.html'>Previous</a> <a href='w2.html'>Next</a> >> w2<br /><h1>w1</h1>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>利用 portable_2026 可攜系統維護 Github Pages 網站內容</p>
+<p>透過 Token 取得維護權限</p>
+<p>y:\home_ipv6\.gitconfig 中設定</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_631505">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">[http </code><code class="js string">"https://github.com"</code><code class="js plain">]</code></div>
+<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">sslVerify = </code><code class="js keyword">false</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>表示當採 https 連線到 github.com 時，停用 SSL 憑證驗證，雖然方便，但若透過公眾網路上網，將會暴露在中間人攻擊(<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB">MITM</a>)的風險。</p>
+<p>或者</p>
+<p>git config --global http.sslCAInfo "y:\PortableGit\usr\ssl\certs\ca-bundle.crt"</p>
+<p>啟用 SSL 憑證驗證。</p>
+<p>利用 Codespaces 維護 Github Pages 網站內容</p>
+<p>Take Home 問題: 近端維護 Github Pages 網站時，有哪兩種管理權限驗證方式?</p>
+<br />Topics << <a href='Topics.html'>Previous</a> <a href='w2.html'>Next</a> >> w2</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
