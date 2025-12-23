@@ -4,3 +4,70 @@ __pycache__/
 venv/
 config/config
 
+# Python
+__pycache__/
+venv/
+config/config
+
+# logs
+*.log
+nohup.out
+
+# runtime / temp
+*.pid
+tmp/
+
+# media / binary
+downloads/*.mp4
+*.avi
+*.mkv
+
+  GNU nano 6.2                                           .gitignore *
+# Byte-compiled
+__pycache__/
+# for Replit, do not use the embedded venv Python
+venv/
+config/config
+
+# Python
+__pycache__/
+venv/
+config/config
+
+# logs
+*.log
+nohup.out
+
+# runtime / temp
+*.pid
+tmp/
+
+# media / binary
+downloads/*.mp4
+*.avi
+*.mkv
+  GNU nano 6.2                                           .gitignore *
+# Byte-compiled
+__pycache__/
+# for Replit, do not use the embedded venv Python
+venv/
+config/config
+
+# Python
+__pycache__/
+venv/
+config/config
+
+# logs
+*.log
+nohup.out
+
+# runtime / temp
+*.pid
+tmp/
+
+# media / binary
+downloads/*.mp4
+*.avi
+*.mkv
+
